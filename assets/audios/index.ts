@@ -1,3 +1,3 @@
 export const Audios = {
-  Objection: require("./objection.png"),
+  Objection: require("./objection.mp3"),
 } as const;
