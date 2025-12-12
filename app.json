@@ -32,6 +32,7 @@
         "projectId": "02fe864e-d8d8-4041-95d6-7f103bfda088"
       }
     },
-    "owner": "mrtys"
+    "owner": "mrtys",
+    "plugins": ["expo-audio"]
   }
 }
