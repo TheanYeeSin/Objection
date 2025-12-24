@@ -33,6 +33,14 @@
       }
     },
     "owner": "mrtys",
-    "plugins": ["expo-audio"]
+    "plugins": [
+      "expo-audio",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow $(PRODUCT_NAME) to access your device motion"
+        }
+      ]
+    ]
   }
 }

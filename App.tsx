@@ -1,32 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
-import { Images } from "./assets/images";
-import { useAudioPlayer } from "expo-audio";
-import { Audios } from "./assets/audios";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import MainScreen from "./src/screens/MainScreen";
 
 export default function App() {
-  const player = useAudioPlayer(Audios.Objection);
-
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        onPress={() => {
-          player.seekTo(0);
-          player.play();
-        }}
-      >
-        <Image source={Images.Objection} />
-      </TouchableOpacity>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <MainScreen />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffffff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
