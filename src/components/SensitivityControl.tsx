@@ -43,7 +43,12 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: "80%",
   },
-  label: { color: "#888", marginBottom: 8 },
+  label: {
+    color: "#888",
+    marginBottom: 8,
+    fontFamily: "Ace-Attorney",
+    fontSize: 20,
+  },
   controls: {
     flexDirection: "row",
     alignItems: "center",
@@ -59,7 +64,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  buttonText: { color: "#fff", fontSize: 20 },
-  value: { color: "#fff", fontSize: 20, marginHorizontal: 12 },
-  hint: { color: "#666", fontSize: 12 },
+  buttonText: { color: "#fff", fontSize: 20, fontFamily: "Ace-Attorney" },
+  value: {
+    color: "#fff",
+    fontSize: 24,
+    marginHorizontal: 12,
+    fontFamily: "Ace-Attorney",
+  },
+  hint: { color: "#666", fontSize: 16, fontFamily: "Ace-Attorney" },
 });

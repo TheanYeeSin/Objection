@@ -97,7 +97,7 @@ export default function MainScreen() {
       <SafeAreaView>
         <StatusBannerSpacer bannerHeight={bannerHeight} />
         <ScrollView contentContainerStyle={styles.container}>
-          <Text style={{ fontSize: 32, color: "#fff" }}>Objection!</Text>
+          <Text style={styles.titleText}>Objection!</Text>
           <AudioButton source={Images.Objection} audio={Audios.Objection} />
           <View style={styles.counterContainer}>
             <Animated.View
@@ -148,6 +148,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 20,
   },
+  titleText: {
+    fontSize: 36,
+    color: "#fff",
+    fontFamily: "Ace-Attorney",
+  },
   counterContainer: {
     alignItems: "center",
     marginBottom: 40,
@@ -162,13 +167,14 @@ const styles = StyleSheet.create({
     top: -20,
   },
   counterLabel: {
-    fontSize: 16,
+    fontFamily: "Ace-Attorney",
+    fontSize: 20,
     color: "#888",
     marginBottom: 8,
   },
   counterValue: {
+    fontFamily: "Ace-Attorney",
     fontSize: 72,
-    fontWeight: "bold",
     color: "#ff3b30",
   },
   buttonContainer: {

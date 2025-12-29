@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonText: {
+    fontFamily: "Ace-Attorney",
     color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
+    fontSize: 20,
   },
 });

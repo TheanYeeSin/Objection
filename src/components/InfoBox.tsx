@@ -34,6 +34,16 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     minWidth: 200,
   },
-  label: { fontSize: 14, color: "#888", marginBottom: 8 },
-  value: { fontSize: 24, fontWeight: "600", color: "#fff" },
+  label: {
+    fontSize: 20,
+    color: "#888",
+    marginBottom: 8,
+    fontFamily: "Ace-Attorney",
+  },
+  value: {
+    fontSize: 24,
+    fontWeight: "600",
+    color: "#fff",
+    fontFamily: "Ace-Attorney",
+  },
 });
