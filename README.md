@@ -27,5 +27,9 @@ npm i
 ```
 
 ```
+npm expo prebuild --clean
+```
+
+```
 npx expo start
 ```
